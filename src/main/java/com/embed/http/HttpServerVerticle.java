@@ -37,7 +37,7 @@ public class HttpServerVerticle extends AbstractVerticle {
         apiRouter.post("/funds_unhold").handler(requestHandler::postUnHoldFund);
 
         router.mountSubRouter("/api", apiRouter);
-        server.requestHandler(router::accept).listen(portNumber, ar -> {
+        server.requestHandler(router::accept).listen(portNumber, System.getProperty("http.address", "0.0.0.0"), ar -> {
             if (ar.succeeded()) {
                 LOGGER.info("HTTP server running on port :" + portNumber);
                 startFuture.complete();

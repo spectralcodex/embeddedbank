@@ -22,8 +22,8 @@
 hs_err_pid*
 
 EmbeddedBank.iml
-target/classes
-target/maven-archiver
+/target/classes
+/target/maven-archiver
 .DS_Store
 */.DS_Store
 

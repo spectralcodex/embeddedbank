@@ -1,2 +1,2 @@
 # embeddedbank
-Calls between T-App and Corebanking
+Calls between Treasury Bill-App and Corebanking
